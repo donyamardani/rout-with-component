@@ -1,12 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function Auth() {
   return (
-    <View>
-      <Text>Auth</Text>
-    </View>
+    <>
+    <h1>AUTH</h1>
+    </>
   )
 }
-
-const styles = StyleSheet.create({})

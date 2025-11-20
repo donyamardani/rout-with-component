@@ -4,4 +4,8 @@
   list-style: none;
   border: none;
   box-sizing: border-box;
+  text-decoration-line: none;
+}
+main{
+  min-height: 100vh;
 }
