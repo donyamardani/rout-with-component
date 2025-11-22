@@ -1,6 +1,7 @@
 import React from 'react'
 import useFormFields from '../../../Utils/UseFormFields'
 import '../style.css'
+import Home from '../../Home'
 export default function SinIn({handlePageType,active, handelActive}) {
   const [fields,handleChange]=useFormFields()
     const handleSubmit=async(e)=>{
@@ -15,7 +16,7 @@ export default function SinIn({handlePageType,active, handelActive}) {
         })
         const data= await res.json()
         if(data.token){
-          alert('login')
+          <Home/>
         }else{
           alert('username or password incorrect')
         }
