@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <>
       <header className={style.header}>
-        <img src="Assets/bg.jpg" alt="header page" />
+        <img src="Assets/bg2.jpg" alt="header page" />
         <nav className={style.nav}>
             <ul>
                 <li>
