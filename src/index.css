@@ -12,16 +12,9 @@
     font-family: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    direction: rtl;
-}
-
 main{
+  padding: 50px;
   width: 100%;
-  margin-top: 100px;
   min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
 }

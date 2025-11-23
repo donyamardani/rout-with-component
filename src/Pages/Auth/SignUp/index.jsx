@@ -7,7 +7,7 @@ export default function SinUp({handlePageType,active, handelActive}) {
     const handleSubmit=async(e)=>{
       e.preventDefault()
       try {
-        const res=await fetch('https://fakestoreapi.com/auth/login',{
+        const res=await fetch('https://api.escuelajs.co/api/v1/auth/login',{
           method:'POST',
           headers:{
             'Content-type':"application/json"
@@ -39,13 +39,13 @@ export default function SinUp({handlePageType,active, handelActive}) {
           </div>
 
           <div className="input-box animation" style={{ "--li": 19, "--S": 2 }}>
-            <input type="email" required name='username' onChange={handleChange} />
+            <input type="email" required name='email' onChange={handleChange} />
             <label>ایمیل</label>
             <box-icon name="envelope" type="solid" color="gray"></box-icon>
           </div>
 
           <div className="input-box animation" style={{ "--li": 19, "--S": 3 }}>
-            <input type="password" required name='username' onChange={handleChange} />
+            <input type="password" required name='password' onChange={handleChange} />
             <label>رمز عبور</label>
             <box-icon name="lock-alt" type="solid" color="gray"></box-icon>
           </div>

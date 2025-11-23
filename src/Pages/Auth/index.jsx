@@ -15,7 +15,7 @@ export default function Auth() {
   }    
   return (
     <>
-    
+    <div className="auth">
     <div className={`container ${active ? "active" : ""}`}>
 
       <div className="curved-shape"></div>
@@ -27,6 +27,7 @@ export default function Auth() {
         <SignUp handlePageType={handlePageType} active={active} handelActive={handelActive} />
       )}
      
+    </div>
     </div>
     </>
   )

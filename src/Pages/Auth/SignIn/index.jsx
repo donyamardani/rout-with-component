@@ -7,7 +7,7 @@ export default function SinIn({handlePageType,active, handelActive}) {
     const handleSubmit=async(e)=>{
       e.preventDefault()
       try {
-        const res=await fetch('https://fakestoreapi.com/auth/login',{
+        const res=await fetch('https://api.escuelajs.co/api/v1/auth/login',{
           method:'POST',
           headers:{
             'Content-type':"application/json"
@@ -15,8 +15,8 @@ export default function SinIn({handlePageType,active, handelActive}) {
           body:JSON.stringify(fields)
         })
         const data= await res.json()
-        if(data.token){
-          <Home/>
+        if(data.access_token){
+          alert('you are login')
         }else{
           alert('username or password incorrect')
         }
@@ -33,9 +33,9 @@ export default function SinIn({handlePageType,active, handelActive}) {
 
         <form onSubmit={handleSubmit}>
           <div className="input-box animation" style={{ "--D": 1, "--S": 22 }}>
-            <input type="text" required name='username' onChange={handleChange} />
-            <label>نام کاربری</label>
-            <box-icon type="solid" name="user" color="gray"></box-icon>
+            <input type="email" required name='email' onChange={handleChange} />
+            <label>ایمیل</label>
+            <box-icon type="solid" name="envelope" color="gray"></box-icon>
           </div>
 
           <div className="input-box animation" style={{ "--D": 2, "--S": 23 }}>
